@@ -1,0 +1,251 @@
+/* Umumiy sahifa fon rangi va shrift sozlamalari */
+body {
+	background-color: #f3f4f6;
+	font-family: 'Inter', sans-serif;
+}
+
+/* Asosiy konteyner: markazlashtirilgan, oq fonli va soya effektli */
+.container {
+	max-width: 900px;
+	margin: 40px auto;
+	padding: 20px;
+	background: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Sana va vaqt kartasi: kulrang fon, markazlashtirilgan matn */
+.datetime-card {
+	background: #e5e7eb;
+	color: #1f2937;
+	padding: 12px;
+	border-radius: 6px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+/* Sana va vaqt matni uchun shrift o'lchami va vazni */
+.datetime-card span {
+	font-size: 1.25rem;
+	font-weight: 500;
+}
+
+/* Notifikatsiya oynasi: dastlab yashirin, pozitsiyasi sobit */
+.notification {
+	display: none;
+	opacity: 0;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	padding: 10px 20px;
+	border-radius: 4px;
+	color: #fff;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	transform: translateY(-10px);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	transition: transform 0.3s ease, opacity 0.3s ease;
+	font-size: 0.9rem;
+	font-weight: 500;
+}
+
+/* Notifikatsiya ko'rsatilganda: ko'rinadi va joylashadi */
+.notification.show {
+	display: flex;
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* Xato, muvaffaqiyat va ma'lumot uchun notifikatsiya ranglari */
+.notification.error {
+	background-color: #ef4444;
+}
+
+.notification.success {
+	background-color: #22c55e;
+}
+
+.notification.info {
+	background-color: #3b82f6;
+}
+
+/* Fan kartasi: margin, padding va hover effekti bilan */
+.subject-card {
+	margin-bottom: 15px;
+	padding: 15px;
+	border-radius: 6px;
+	background: #f9fafb;
+	transition: transform 0.2s ease;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	border: 1px solid #e5e7eb;
+}
+
+/* Fan kartasi hover holatida: biroz yuqoriga ko'tariladi */
+.subject-card:hover {
+	transform: translateY(-2px);
+}
+
+/* Testni boshlash tugmasi: ko'k rang, tranzitsiya effekti */
+.subject-card button.start-btn {
+	background: #3b82f6;
+	border: none;
+	transition: background 0.3s ease;
+}
+
+/* Tugma hover holatida: quyuqroq ko'k rang */
+.subject-card button.start-btn:hover:not(:disabled) {
+	background: #2563eb;
+}
+
+/* Tugma o'chirilgan holatda: kulrang va kursor o'zgartirilmaydi */
+.subject-card button.start-btn:disabled {
+	background: #d1d5db;
+	cursor: not-allowed;
+}
+
+/* O'chirilgan tugma hover holatida xabar ko'rsatish */
+.subject-card button.start-btn:disabled::after {
+	content: 'Bu test ishlab bo‘lingan';
+	display: none;
+	position: absolute;
+	background: #1f2937;
+	color: #fff;
+	padding: 4px 8px;
+	border-radius: 4px;
+	font-size: 0.75rem;
+	top: -30px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.subject-card button.start-btn:disabled:hover::after {
+	display: block;
+}
+
+/* Test holatini tozalash tugmasi: qizil rang */
+.subject-card button.clear-btn {
+	background: #ef4444;
+	border: none;
+	padding: 8px;
+	transition: background 0.3s ease;
+}
+
+/* Tozalash tugmasi hover holatida: quyuqroq qizil */
+.subject-card button.clear-btn:hover {
+	background: #dc2626;
+}
+
+/* Modal oynasi: yashirin, butun ekranni qoplaydi */
+.modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	justify-content: center;
+	align-items: center;
+	z-index: 2000;
+}
+
+/* Modal ichidagi konteyner: oq fon, soya va tranzitsiya */
+.modal-content {
+	background: #ffffff;
+	padding: 20px;
+	border-radius: 8px;
+	width: 400px;
+	max-width: 90%;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	transform: scale(0.9);
+	transition: transform 0.2s ease;
+}
+
+/* Modal ko'rsatilganda: o'lchami normal holatga keladi */
+.modal.show .modal-content {
+	transform: scale(1);
+}
+
+/* Modal ichidagi input: to'liq kenglik, ramka va radius */
+.modal-content input {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #d1d5db;
+	border-radius: 6px;
+}
+
+/* Modal tugmalari: padding va radius */
+.modal-content button {
+	padding: 8px 16px;
+	border-radius: 6px;
+}
+
+/* Tugma, label va fan kartasidagi ikonka uchun margin */
+.btn i,
+.form-label i,
+.subject-card i {
+	margin-right: 8px;
+}
+
+/* Sarlavha rangi */
+h1 {
+	color: #1f2937;
+}
+
+/* Loading animatsiyasi konteyneri: dastlab yashirin, markazlashtirilgan */
+.loader {
+	display: none;
+	width: 60px;
+	height: 20px;
+	margin: 20px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+}
+
+/* Loading ko'rsatilganda: ko'rinadi */
+.loader.show {
+	display: flex;
+}
+
+/* Loading nuqtalari: dumaloq, gradient rangli, animatsiyali */
+.loader div {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: linear-gradient(45deg, #3b82f6, #06b6d4);
+	animation: bounce 1.2s ease-in-out infinite;
+}
+
+/* Har bir nuqta uchun kechikish vaqtlari */
+.loader div:nth-child(1) {
+	animation-delay: 0s;
+}
+
+.loader div:nth-child(2) {
+	animation-delay: 0.2s;
+}
+
+.loader div:nth-child(3) {
+	animation-delay: 0.4s;
+}
+
+/* Bounce animatsiyasi: nuqtalar yuqoriga-pastga harakatlanadi */
+@keyframes bounce {
+	0%,
+	100% {
+		transform: translateY(0);
+		opacity: 0.6;
+	}
+
+	50% {
+		transform: translateY(-10px);
+		opacity: 1;
+	}
+}

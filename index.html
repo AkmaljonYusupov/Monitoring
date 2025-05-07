@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Kodning umumiy sozlamalari: UTF-8 kodlash va mobil qurilmalar uchun moslashuvchan dizayn -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Monitoring Test</title>
+	<!-- Bootstrap va Tailwind CSS kutubxonalarini ulash -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+	<!-- Asosiy konteyner: barcha kontentni o'z ichiga oladi -->
+	<div class="container">
+		<!-- Sana va vaqtni ko'rsatuvchi karta -->
+		<div class="datetime-card">
+			<span id="date"></span> | <span id="time"></span>
+		</div>
+		<!-- Sahifa sarlavhasi: ikonkali Monitoring Test matni -->
+		<h1 class="text-center mb-4 text-3xl font-bold">
+			<svg class="inline-block w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+					d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+				</path>
+			</svg>
+			Monitoring Test
+		</h1>
+		<!-- Sinf tanlash formasi -->
+		<div class="mb-4">
+			<label for="classSelect" class="form-label flex items-center text-gray-700 font-semibold">
+				<svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+					xmlns="http://www.w3.org/2000/svg">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+						d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z">
+					</path>
+				</svg>
+				Sinflarni tanlang:
+			</label>
+			<!-- Sinf tanlash uchun dropdown menyusi -->
+			<select id="classSelect"
+				class="form-select border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500">
+				<option value="">Sinarni tanlang</option>
+				<option value="5-A-Sinf">5-A-Sinf</option>
+				<option value="5-F-Sinf">5-F-Sinf</option>
+				<option value="5-E-Sinf">5-E-Sinf</option>
+				<option value="5-G-Sinf">5-G-Sinf</option>
+				<option value="5-D-Sinf">5-D-Sinf</option>
+				<option value="6-B-Sinf">6-B-Sinf</option>
+				<option value="7-B-Sinf">7-B-Sinf</option>
+				<option value="7-D-Sinf">7-D-Sinf</option>
+				<option value="7-E-Sinf">7-E-Sinf</option>
+				<option value="7-G-Sinf">7-G-Sinf</option>
+				<option value="7-A-Sinf">7-A-Sinf</option>
+				<option value="8-A-Sinf">8-A-Sinf</option>
+				<option value="8-E-Sinf">8-E-Sinf</option>
+				<option value="8-D-Sinf">8-D-Sinf</option>
+				<option value="9-A-Sinf">9-A-Sinf</option>
+				<option value="9-B-Sinf">9-B-Sinf</option>
+				<option value="9-G-Sinf">9-G-Sinf</option>
+				<option value="10-A-Sinf">10-A-Sinf</option>
+				<option value="10-B-Sinf">10-B-Sinf</option>
+				<option value="11-A-Sinf">11-A-Sinf</option>
+				<option value="11-B-Sinf">11-B-Sinf</option>
+			</select>
+		</div>
+		<!-- Fanlar ro'yxati va loading animatsiyasi joylashadigan div -->
+		<div id="subjects" class="mt-4">
+			<div id="loader" class="loader">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Notifikatsiya oynasi -->
+	<div id="notification" class="notification"></div>
+
+	<!-- Parol kiritish uchun modal oyna -->
+	<div id="passwordModal" class="modal">
+		<div class="modal-content">
+			<h5 class="flex items-center text-lg font-semibold text-gray-800">
+				<svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+					xmlns="http://www.w3.org/2000/svg">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+						d="M12 11c0-2.76-2.24-5-5-5S2 8.24 2 11s2.24 5 5 5 5-2.24 5-5zm-5 1V9m0 0c1.104 0 2 .896 2 2H5c0-1.104.896-2 2-2zm5 7v3m-5-3v3m10-3v3m-5-3v3">
+					</path>
+				</svg>
+				Parolni kiriting
+			</h5>
+			<input type="password" id="passwordInput" class="form-control" placeholder="Parol">
+			<div class="mt-4 flex gap-3">
+				<!-- Parolni tasdiqlash tugmasi -->
+				<button class="btn btn-primary flex items-center" onclick="submitPassword()">
+					<svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+						xmlns="http://www.w3.org/2000/svg">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+					</svg>
+					Tasdiqlash
+				</button>
+				<!-- Modalni yopish tugmasi -->
+				<button class="btn btn-secondary flex items-center" onclick="closeModal()">
+					<svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+						xmlns="http://www.w3.org/2000/svg">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+					</svg>
+					Bekor qilish
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bootstrap JavaScript kutubxonasini ulash -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="./script.js">
+
+	</script>
+</body>
+
+</html>
