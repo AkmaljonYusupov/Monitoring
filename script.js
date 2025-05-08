@@ -114,7 +114,7 @@ const classSubjects = {
 		{ name: 'Tarix 2-variant', link: 'https://forms.gle/FrKgAp6G1SECHrcK6' },
 		{
 			name: 'Matematika 1-variant',
-			link: 'https://forms.gle/CZahy9XUB2DLo4989',
+			link: 'https://forms.gle/CZahy9XUB2DLo498 orgasmus9',
 		},
 		{
 			name: 'Matematika 2-variant',
@@ -240,9 +240,6 @@ const classPasswords = {
 	'11-B-Sinf': '11bsinf11',
 }
 
-// Test holatini tozalash uchun maxsus parol
-const clearStoragePassword = 'Ab0702013'
-
 // HTML elementlarini JavaScript orqali olish
 const classSelect = document.getElementById('classSelect') // Sinf tanlash dropdown
 const subjectsDiv = document.getElementById('subjects') // Fanlar ro'yxati div
@@ -257,7 +254,6 @@ const loader = document.getElementById('loader') // Loading animatsiyasi element
 let currentLink = '' // Tanlangan test havolasi
 let currentClass = '' // Tanlangan sinf
 let currentSubject = '' // Tanlangan fan
-let isClearingStorage = false // Test holatini tozalash holati
 
 // Sana va vaqtni yangilash funksiyasi
 function updateDateTime() {
@@ -387,7 +383,9 @@ async function displaySubjects(className) {
 											Testni boshlash
 									</button>
 									<button class="btn clear-btn flex items-center text-white" 
-													onclick="openClearStorageModal('${className}', '${subject.name}')">
+													onclick="clearTestFromStorage('${className}', '${
+			subject.name
+		}'); showNotification('Test holati tozalandi!', 'success'); displaySubjects('${className}')">
 											<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
 									</button>
 							</div>
@@ -406,22 +404,10 @@ function openPasswordModal(link, className, subjectName) {
 	currentLink = link // Joriy havolani saqlash
 	currentClass = className // Joriy sinfni saqlash
 	currentSubject = subjectName // Joriy fanni saqlash
-	isClearingStorage = false // Tozalash emas, test boshlash
 	passwordModal.style.display = 'flex' // Modalni ko'rsatish
 	passwordModal.classList.add('show') // Animatsiyani qo'shish
 	passwordInput.value = '' // Inputni tozalash
 	passwordInput.focus() // Inputga fokus qo'yish
-}
-
-// Test holatini tozalash uchun modalni ochish
-function openClearStorageModal(className, subjectName) {
-	currentClass = className
-	currentSubject = subjectName
-	isClearingStorage = true // Tozalash rejimi
-	passwordModal.style.display = 'flex'
-	passwordModal.classList.add('show')
-	passwordInput.value = ''
-	passwordInput.focus()
 }
 
 // Modalni yopish funksiyasi
@@ -435,33 +421,18 @@ function closeModal() {
 // Parolni tasdiqlash funksiyasi
 function submitPassword() {
 	const password = passwordInput.value
-	if (isClearingStorage) {
-		// Test holatini tozalash
-		const enteredPassword = password.toLowerCase()
-		const correctPassword = clearStoragePassword.toLowerCase()
-		if (enteredPassword === correctPassword) {
-			clearTestFromStorage(currentClass, currentSubject) // Holatni o'chirish
-			closeModal() // Modalni yopish
-			showNotification('Test holati tozalandi!', 'success')
-			displaySubjects(currentClass) // Ro'yxatni yangilash
-		} else {
-			showNotification('Parol xato!', 'error')
-			passwordInput.value = '' // Inputni tozalash
-		}
+	// Testni boshlash
+	const enteredPassword = password.toLowerCase()
+	const correctPassword = classPasswords[currentClass].toLowerCase()
+	if (enteredPassword === correctPassword) {
+		markTestAsTaken(currentClass, currentSubject) // Testni belgilash
+		window.open(currentLink, '_blank') // Havolani yangi oynada ochish
+		closeModal() // Modalni yopish
+		showNotification('Test boshlandi!', 'success')
+		displaySubjects(currentClass) // Ro'yxatni yangilash
 	} else {
-		// Testni boshlash
-		const enteredPassword = password.toLowerCase()
-		const correctPassword = classPasswords[currentClass].toLowerCase()
-		if (enteredPassword === correctPassword) {
-			markTestAsTaken(currentClass, currentSubject) // Testni belgilash
-			window.open(currentLink, '_blank') // Havolani yangi oynada ochish
-			closeModal() // Modalni yopish
-			showNotification('Test boshlandi!', 'success')
-			displaySubjects(currentClass) // Ro'yxatni yangilash
-		} else {
-			showNotification('Parol xato!', 'error')
-			passwordInput.value = ''
-		}
+		showNotification('Parol xato!', 'error')
+		passwordInput.value = ''
 	}
 }
 
