@@ -1,34 +1,34 @@
 // Sinf va fanlar ro'yxati ob'ekti: har bir sinf uchun fan nomi va Google Forms havolasi
 const classSubjects = {
-	'5-A-Sinf': [
-		{ name: 'Tarixdan hikoyalar', link: 'https://forms.gle/4FaYJDR9yr8XM4JXA' },
-		{
-			name: 'Onatili va adabiyot',
-			link: 'https://forms.gle/3b9pGN8SRPzxnZNZ8',
-		},
-		{ name: '1-gurux Rustili', link: 'https://forms.gle/cEA9FbbreaY368J98' },
-		{
-			name: 'Informatika 1-gurux',
-			link: 'https://forms.gle/e34nkJmWBgHZXd8w7',
-		},
-		{
-			name: 'Informatika 2-gurux',
-			link: 'https://forms.gle/1fmztBDL2w3Qhp8w6',
-		},
-	],
-	'5-F-Sinf': [
-		{
-			name: 'Onatili va adabiyot',
-			link: 'https://forms.gle/ze4v96hpPzPynUH8A',
-		},
-	],
-	'5-E-Sinf': [
-		{ name: 'Tabiiy fan', link: 'https://forms.gle/pFf5ZcZG5GLZcdebA' },
-		{ name: 'Ingliz tili', link: 'https://forms.gle/pBkBcK6QsRRPChRC6' },
-	],
-	'5-G-Sinf': [
-		{ name: 'Matematika', link: 'https://forms.gle/ELb8HtVBrTGri9LYA' },
-	],
+	// '5-A-Sinf': [
+	// 	{ name: 'Tarixdan hikoyalar', link: 'https://forms.gle/4FaYJDR9yr8XM4JXA' },
+	// 	{
+	// 		name: 'Onatili va adabiyot',
+	// 		link: 'https://forms.gle/3b9pGN8SRPzxnZNZ8',
+	// 	},
+	// 	{ name: '1-gurux Rustili', link: 'https://forms.gle/cEA9FbbreaY368J98' },
+	// 	{
+	// 		name: 'Informatika 1-gurux',
+	// 		link: 'https://forms.gle/e34nkJmWBgHZXd8w7',
+	// 	},
+	// 	{
+	// 		name: 'Informatika 2-gurux',
+	// 		link: 'https://forms.gle/1fmztBDL2w3Qhp8w6',
+	// 	},
+	// ],
+	// '5-F-Sinf': [
+	// 	{
+	// 		name: 'Onatili va adabiyot',
+	// 		link: 'https://forms.gle/ze4v96hpPzPynUH8A',
+	// 	},
+	// ],
+	// '5-E-Sinf': [
+	// 	{ name: 'Tabiiy fan', link: 'https://forms.gle/pFf5ZcZG5GLZcdebA' },
+	// 	{ name: 'Ingliz tili', link: 'https://forms.gle/pBkBcK6QsRRPChRC6' },
+	// ],
+	// '5-G-Sinf': [
+	// 	{ name: 'Matematika', link: 'https://forms.gle/ELb8HtVBrTGri9LYA' },
+	// ],
 	'5-D-Sinf': [
 		{
 			name: 'Onatili va adabiyot',
@@ -50,14 +50,14 @@ const classSubjects = {
 			link: 'https://forms.gle/gpNwh4nMnHhJYcm97',
 		},
 	],
-	'7-B-Sinf': [
-		{ name: 'Ingliz tili', link: 'https://forms.gle/YVT296jEGuHKk4Qw5' },
-		{ name: 'Kimyo', link: 'https://forms.gle/cjkGHTDpgKC8x1eg9' },
-		{ name: 'Matematika', link: 'https://forms.gle/peS6FZMw8Jdb6cX46' },
-	],
-	'7-D-Sinf': [
-		{ name: 'Biologiya', link: 'https://forms.gle/ykAZaMaubUcd5og19' },
-	],
+	// '7-B-Sinf': [
+	// 	{ name: 'Ingliz tili', link: 'https://forms.gle/YVT296jEGuHKk4Qw5' },
+	// 	{ name: 'Kimyo', link: 'https://forms.gle/cjkGHTDpgKC8x1eg9' },
+	// 	{ name: 'Matematika', link: 'https://forms.gle/peS6FZMw8Jdb6cX46' },
+	// ],
+	// '7-D-Sinf': [
+	// 	{ name: 'Biologiya', link: 'https://forms.gle/ykAZaMaubUcd5og19' },
+	// ],
 	'7-E-Sinf': [
 		{ name: 'Fizika', link: 'https://forms.gle/iNGD9QYo31j5kR5V6' },
 		{
@@ -66,13 +66,13 @@ const classSubjects = {
 		},
 		{ name: 'Ingliz tili', link: 'https://forms.gle/G5rXtug8d7XkbsLF8' },
 	],
-	'7-G-Sinf': [
-		{ name: 'Matematika', link: 'https://forms.gle/ay1mfEHhFGhYy15s7' },
-	],
-	'7-A-Sinf': [
-		{ name: '1-gurux Rustili', link: 'https://forms.gle/7CKXh6jPA2gjnGCc9' },
-		{ name: 'Ingliz tili', link: 'https://forms.gle/rgfqaw3t9Xxou8ud8' },
-	],
+	// '7-G-Sinf': [
+	// 	{ name: 'Matematika', link: 'https://forms.gle/ay1mfEHhFGhYy15s7' },
+	// ],
+	// '7-A-Sinf': [
+	// 	{ name: '1-gurux Rustili', link: 'https://forms.gle/7CKXh6jPA2gjnGCc9' },
+	// 	{ name: 'Ingliz tili', link: 'https://forms.gle/rgfqaw3t9Xxou8ud8' },
+	// ],
 	'8-A-Sinf': [
 		{ name: 'Tarbiy', link: 'https://forms.gle/EMNw8MaZQHAKSHaK8' },
 		{ name: 'Fizika', link: 'https://forms.gle/T1XQJHcJjSAnwqbHA' },
@@ -89,38 +89,38 @@ const classSubjects = {
 			link: 'https://forms.gle/caHS3hMWbLV7tX7QA',
 		},
 	],
-	'9-A-Sinf': [
-		{
-			name: 'Ingliz tili 1-variant',
-			link: 'https://forms.gle/scp87WbH8oFwdvox8',
-		},
-		{
-			name: 'Ingliz tili 2-variant',
-			link: 'https://forms.gle/nSZfL8vczwKws3RPA',
-		},
-	],
-	'9-B-Sinf': [
-		// { name: 'Fizika 1-variant', link: 'https://forms.gle/eXNjGYX41g8i1CPX9' },
-		// { name: 'Fizika 2-variant', link: 'https://forms.gle/pyYCDpXh3GMHhKas6' },
-		// {
-		// 	name: 'Onatili va Adabiyot 1-variant',
-		// 	link: 'https://forms.gle/VFVVbtvPAicJS8FH8',
-		// },
-		// {
-		// 	name: 'Onatili va Adabiyot 2-variant',
-		// 	link: 'https://forms.gle/PsLZ2R9VfGH5NsaZ8',
-		// },
-		{ name: 'Tarix 1-variant', link: 'https://forms.gle/FLg3hUtBbZHfwsc57' },
-		{ name: 'Tarix 2-variant', link: 'https://forms.gle/FrKgAp6G1SECHrcK6' },
-		// {
-		// 	name: 'Matematika 1-variant',
-		// 	link: 'https://forms.gle/CZahy9XUB2DLo498 orgasmus9',
-		// },
-		// {
-		// 	name: 'Matematika 2-variant',
-		// 	link: 'https://forms.gle/7fcqdUs4ceXiJu1LA',
-		// },
-	],
+	// '9-A-Sinf': [
+	// 	{
+	// 		name: 'Ingliz tili 1-variant',
+	// 		link: 'https://forms.gle/scp87WbH8oFwdvox8',
+	// 	},
+	// 	{
+	// 		name: 'Ingliz tili 2-variant',
+	// 		link: 'https://forms.gle/nSZfL8vczwKws3RPA',
+	// 	},
+	// ],
+	// '9-B-Sinf': [
+	// { name: 'Fizika 1-variant', link: 'https://forms.gle/eXNjGYX41g8i1CPX9' },
+	// { name: 'Fizika 2-variant', link: 'https://forms.gle/pyYCDpXh3GMHhKas6' },
+	// {
+	// 	name: 'Onatili va Adabiyot 1-variant',
+	// 	link: 'https://forms.gle/VFVVbtvPAicJS8FH8',
+	// },
+	// {
+	// 	name: 'Onatili va Adabiyot 2-variant',
+	// 	link: 'https://forms.gle/PsLZ2R9VfGH5NsaZ8',
+	// },
+	// { name: 'Tarix 1-variant', link: 'https://forms.gle/FLg3hUtBbZHfwsc57' },
+	// { name: 'Tarix 2-variant', link: 'https://forms.gle/FrKgAp6G1SECHrcK6' },
+	// {
+	// 	name: 'Matematika 1-variant',
+	// 	link: 'https://forms.gle/CZahy9XUB2DLo498 orgasmus9',
+	// },
+	// {
+	// 	name: 'Matematika 2-variant',
+	// 	link: 'https://forms.gle/7fcqdUs4ceXiJu1LA',
+	// },
+	// ],
 	'9-G-Sinf': [
 		{
 			name: 'Matematika 1-variant',
@@ -131,58 +131,58 @@ const classSubjects = {
 			link: 'https://forms.gle/qqDNPv2Wof4hhY5m8',
 		},
 	],
-	'10-A-Sinf': [
-		{
-			name: 'O`zbekiston tarixi 1-variant',
-			link: 'https://forms.gle/jdnkuHKrjujmqVxj6',
-		},
-		{
-			name: 'O`zbekiston tarixi 2-variant',
-			link: 'https://forms.gle/vUPFEtrvu5Y435yh9',
-		},
-		{
-			name: '1-gurux Rustili 1-variant',
-			link: 'https://forms.gle/vzt4YouN4JpAYcd48',
-		},
-		{
-			name: '2-gurux Rustili 2-variant',
-			link: 'https://forms.gle/QcZej1v3CQ3d2HdDA',
-		},
-	],
-	'10-B-Sinf': [
-		{
-			name: 'Ingliz tili 1-variant',
-			link: 'https://forms.gle/v2L9VwxXYHMXaJNt5',
-		},
-		{
-			name: 'Ingliz tili 2-variant',
-			link: 'https://forms.gle/E654TaJDpivteyd59',
-		},
-		{
-			name: 'Geografiya 1-variant',
-			link: 'https://forms.gle/RowEsDxeFMCdQuq78',
-		},
-		{
-			name: 'Geografiya 2-variant',
-			link: 'https://forms.gle/Qfqm9m62eP5YF4Hj8',
-		},
-		{
-			name: 'Matematika 1-variant',
-			link: 'https://forms.gle/vqajakbFXKr3D9kY9',
-		},
-		{
-			name: 'Matematika 2-variant',
-			link: 'https://forms.gle/uryLerFVwgiJo1Kb8',
-		},
-		{
-			name: 'Onatili va Adabiyot 1-variant',
-			link: 'https://forms.gle/Zm5zxpLY6dpyNe1m8',
-		},
-		{
-			name: 'Onatili va Adabiyot 2-variant',
-			link: 'https://forms.gle/6gfkimPshuDvuMCDA',
-		},
-	],
+	// '10-A-Sinf': [
+	// 	{
+	// 		name: 'O`zbekiston tarixi 1-variant',
+	// 		link: 'https://forms.gle/jdnkuHKrjujmqVxj6',
+	// 	},
+	// 	{
+	// 		name: 'O`zbekiston tarixi 2-variant',
+	// 		link: 'https://forms.gle/vUPFEtrvu5Y435yh9',
+	// 	},
+	// 	{
+	// 		name: '1-gurux Rustili 1-variant',
+	// 		link: 'https://forms.gle/vzt4YouN4JpAYcd48',
+	// 	},
+	// 	{
+	// 		name: '2-gurux Rustili 2-variant',
+	// 		link: 'https://forms.gle/QcZej1v3CQ3d2HdDA',
+	// 	},
+	// ],
+	// '10-B-Sinf': [
+	// 	{
+	// 		name: 'Ingliz tili 1-variant',
+	// 		link: 'https://forms.gle/v2L9VwxXYHMXaJNt5',
+	// 	},
+	// 	{
+	// 		name: 'Ingliz tili 2-variant',
+	// 		link: 'https://forms.gle/E654TaJDpivteyd59',
+	// 	},
+	// 	{
+	// 		name: 'Geografiya 1-variant',
+	// 		link: 'https://forms.gle/RowEsDxeFMCdQuq78',
+	// 	},
+	// 	{
+	// 		name: 'Geografiya 2-variant',
+	// 		link: 'https://forms.gle/Qfqm9m62eP5YF4Hj8',
+	// 	},
+	// 	{
+	// 		name: 'Matematika 1-variant',
+	// 		link: 'https://forms.gle/vqajakbFXKr3D9kY9',
+	// 	},
+	// 	{
+	// 		name: 'Matematika 2-variant',
+	// 		link: 'https://forms.gle/uryLerFVwgiJo1Kb8',
+	// 	},
+	// 	{
+	// 		name: 'Onatili va Adabiyot 1-variant',
+	// 		link: 'https://forms.gle/Zm5zxpLY6dpyNe1m8',
+	// 	},
+	// 	{
+	// 		name: 'Onatili va Adabiyot 2-variant',
+	// 		link: 'https://forms.gle/6gfkimPshuDvuMCDA',
+	// 	},
+	// ],
 	'11-A-Sinf': [
 		{
 			name: 'Ingliz tili 1-variant',
@@ -193,51 +193,51 @@ const classSubjects = {
 			link: 'https://forms.gle/dgirGuwGCfcknsNx8',
 		},
 	],
-	'11-B-Sinf': [
-		{
-			name: 'Onatili va adabiyot 1-variant',
-			link: 'https://forms.gle/2PG8XAKX4LrAUj699',
-		},
-		{
-			name: 'Onatili va adabiyot 2-variant',
-			link: 'https://forms.gle/rbkfwQ3HYmgGUCcw6',
-		},
-		{
-			name: 'Matematika 1-variant',
-			link: 'https://forms.gle/DyFkHrLYPWs9vr4t5',
-		},
-		{
-			name: 'Matematika 2-variant',
-			link: 'https://forms.gle/pnjcKH4ENXwMaNfx9',
-		},
-		{ name: 'Tarbiya 1-variant', link: 'https://forms.gle/6rFL1pZ3r1wZVnxEA' },
-		{ name: 'Tarbiya 2-variant', link: 'https://forms.gle/Em1qCSVsh5YeZaXh7' },
-	],
+	// '11-B-Sinf': [
+	// 	{
+	// 		name: 'Onatili va adabiyot 1-variant',
+	// 		link: 'https://forms.gle/2PG8XAKX4LrAUj699',
+	// 	},
+	// 	{
+	// 		name: 'Onatili va adabiyot 2-variant',
+	// 		link: 'https://forms.gle/rbkfwQ3HYmgGUCcw6',
+	// 	},
+	// 	{
+	// 		name: 'Matematika 1-variant',
+	// 		link: 'https://forms.gle/DyFkHrLYPWs9vr4t5',
+	// 	},
+	// 	{
+	// 		name: 'Matematika 2-variant',
+	// 		link: 'https://forms.gle/pnjcKH4ENXwMaNfx9',
+	// 	},
+	// 	{ name: 'Tarbiya 1-variant', link: 'https://forms.gle/6rFL1pZ3r1wZVnxEA' },
+	// 	{ name: 'Tarbiya 2-variant', link: 'https://forms.gle/Em1qCSVsh5YeZaXh7' },
+	// ],
 }
 
 // Sinflar uchun parollar ob'ekti
 const classPasswords = {
-	'5-A-Sinf': '5asinf5',
-	'5-F-Sinf': '5fsinf5',
-	'5-E-Sinf': '5esinf5',
-	'5-G-Sinf': '5gsinf5',
+	// '5-A-Sinf': '5asinf5',
+	// '5-F-Sinf': '5fsinf5',
+	// '5-E-Sinf': '5esinf5',
+	// '5-G-Sinf': '5gsinf5',
 	'5-D-Sinf': '5dsinf5',
 	'6-B-Sinf': '6bsinf6',
-	'7-B-Sinf': '7bsinf7',
-	'7-D-Sinf': '7dsinf7',
+	// '7-B-Sinf': '7bsinf7',
+	// '7-D-Sinf': '7dsinf7',
 	'7-E-Sinf': '7esinf7',
-	'7-G-Sinf': '7gsinf7',
-	'7-A-Sinf': '7asinf7',
+	// '7-G-Sinf': '7gsinf7',
+	// '7-A-Sinf': '7asinf7',
 	'8-A-Sinf': '8asinf8',
 	'8-E-Sinf': '8esinf8',
 	'8-D-Sinf': '8dsinf8',
-	'9-A-Sinf': '9asinf9',
-	'9-B-Sinf': '9bsinf9',
+	// '9-A-Sinf': '9asinf9',
+	// '9-B-Sinf': '9bsinf9',
 	'9-G-Sinf': '9gsinf9',
-	'10-A-Sinf': '10asinf10',
-	'10-B-Sinf': '10bsinf10',
+	// '10-A-Sinf': '10asinf10',
+	// '10-B-Sinf': '10bsinf10',
 	'11-A-Sinf': '11asinf11',
-	'11-B-Sinf': '11bsinf11',
+	// '11-B-Sinf': '11bsinf11',
 }
 
 // HTML elementlarini JavaScript orqali olish
