@@ -100,26 +100,26 @@ const classSubjects = {
 		},
 	],
 	'9-B-Sinf': [
-		{ name: 'Fizika 1-variant', link: 'https://forms.gle/eXNjGYX41g8i1CPX9' },
-		{ name: 'Fizika 2-variant', link: 'https://forms.gle/pyYCDpXh3GMHhKas6' },
-		{
-			name: 'Onatili va Adabiyot 1-variant',
-			link: 'https://forms.gle/VFVVbtvPAicJS8FH8',
-		},
-		{
-			name: 'Onatili va Adabiyot 2-variant',
-			link: 'https://forms.gle/PsLZ2R9VfGH5NsaZ8',
-		},
+		// { name: 'Fizika 1-variant', link: 'https://forms.gle/eXNjGYX41g8i1CPX9' },
+		// { name: 'Fizika 2-variant', link: 'https://forms.gle/pyYCDpXh3GMHhKas6' },
+		// {
+		// 	name: 'Onatili va Adabiyot 1-variant',
+		// 	link: 'https://forms.gle/VFVVbtvPAicJS8FH8',
+		// },
+		// {
+		// 	name: 'Onatili va Adabiyot 2-variant',
+		// 	link: 'https://forms.gle/PsLZ2R9VfGH5NsaZ8',
+		// },
 		{ name: 'Tarix 1-variant', link: 'https://forms.gle/FLg3hUtBbZHfwsc57' },
 		{ name: 'Tarix 2-variant', link: 'https://forms.gle/FrKgAp6G1SECHrcK6' },
-		{
-			name: 'Matematika 1-variant',
-			link: 'https://forms.gle/CZahy9XUB2DLo498 orgasmus9',
-		},
-		{
-			name: 'Matematika 2-variant',
-			link: 'https://forms.gle/7fcqdUs4ceXiJu1LA',
-		},
+		// {
+		// 	name: 'Matematika 1-variant',
+		// 	link: 'https://forms.gle/CZahy9XUB2DLo498 orgasmus9',
+		// },
+		// {
+		// 	name: 'Matematika 2-variant',
+		// 	link: 'https://forms.gle/7fcqdUs4ceXiJu1LA',
+		// },
 	],
 	'9-G-Sinf': [
 		{
