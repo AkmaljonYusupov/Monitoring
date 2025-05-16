@@ -50,11 +50,11 @@ const classSubjects = {
 			link: 'https://forms.gle/gpNwh4nMnHhJYcm97',
 		},
 	],
-	// '7-B-Sinf': [
+	'8-B-Sinf': [
 	// 	{ name: 'Ingliz tili', link: 'https://forms.gle/YVT296jEGuHKk4Qw5' },
 	// 	{ name: 'Kimyo', link: 'https://forms.gle/cjkGHTDpgKC8x1eg9' },
-	// 	{ name: 'Matematika', link: 'https://forms.gle/peS6FZMw8Jdb6cX46' },
-	// ],
+		{ name: 'Matematika', link: 'https://forms.gle/cuoAbTnVsiUUqdS48' },
+	],
 	// '7-D-Sinf': [
 	// 	{ name: 'Biologiya', link: 'https://forms.gle/ykAZaMaubUcd5og19' },
 	// ],
@@ -223,7 +223,7 @@ const classPasswords = {
 	// '5-G-Sinf': '5gsinf5',
 	'5-D-Sinf': '5dsinf5',
 	'6-B-Sinf': '6bsinf6',
-	// '7-B-Sinf': '7bsinf7',
+	'8-B-Sinf': '8bsinf8',
 	// '7-D-Sinf': '7dsinf7',
 	'7-E-Sinf': '7esinf7',
 	// '7-G-Sinf': '7gsinf7',
