@@ -29,32 +29,32 @@ const classSubjects = {
 	// '5-G-Sinf': [
 	// 	{ name: 'Matematika', link: 'https://forms.gle/ELb8HtVBrTGri9LYA' },
 	// ],
-	'5-D-Sinf': [
-		{
-			name: 'Onatili va adabiyot',
-			link: 'https://forms.gle/DHTT5ySDAn5rgeo1A',
-		},
-		{ name: 'Matematika', link: 'https://forms.gle/Ln7daKovCiAuKrRv8' },
-		{ name: 'Ingliz tili', link: 'https://forms.gle/rFHttuxoMZD2XgFa9' },
-	],
-	'6-B-Sinf': [
-		{ name: 'Ingliz tili', link: 'https://forms.gle/hKKbQTWGBnam1NyN7' },
-		{ name: 'Matematika', link: 'https://forms.gle/yDySW3xbKXXrVM639' },
-		{ name: 'Tarix', link: 'https://forms.gle/3wszbqQts349h6fN7' },
-		{
-			name: 'Informatika 1-gurux',
-			link: 'https://forms.gle/QE2qKfg1pUosWfYx5',
-		},
-		{
-			name: 'Informatika 2-gurux',
-			link: 'https://forms.gle/gpNwh4nMnHhJYcm97',
-		},
-	],
-	'8-B-Sinf': [
+	// '5-D-Sinf': [
+	// 	{
+	// 		name: 'Onatili va adabiyot',
+	// 		link: 'https://forms.gle/DHTT5ySDAn5rgeo1A',
+	// 	},
+	// 	{ name: 'Matematika', link: 'https://forms.gle/Ln7daKovCiAuKrRv8' },
+	// 	{ name: 'Ingliz tili', link: 'https://forms.gle/rFHttuxoMZD2XgFa9' },
+	// ],
+	// '6-B-Sinf': [
+	// 	{ name: 'Ingliz tili', link: 'https://forms.gle/hKKbQTWGBnam1NyN7' },
+	// 	{ name: 'Matematika', link: 'https://forms.gle/yDySW3xbKXXrVM639' },
+	// 	{ name: 'Tarix', link: 'https://forms.gle/3wszbqQts349h6fN7' },
+	// 	{
+	// 		name: 'Informatika 1-gurux',
+	// 		link: 'https://forms.gle/QE2qKfg1pUosWfYx5',
+	// 	},
+	// 	{
+	// 		name: 'Informatika 2-gurux',
+	// 		link: 'https://forms.gle/gpNwh4nMnHhJYcm97',
+	// 	},
+	// ],
+	// '8-B-Sinf': [
 	// 	{ name: 'Ingliz tili', link: 'https://forms.gle/YVT296jEGuHKk4Qw5' },
 	// 	{ name: 'Kimyo', link: 'https://forms.gle/cjkGHTDpgKC8x1eg9' },
-		{ name: 'Matematika', link: 'https://forms.gle/cuoAbTnVsiUUqdS48' },
-	],
+	// { name: 'Matematika', link: 'https://forms.gle/cuoAbTnVsiUUqdS48' },
+	// ],
 	// '7-D-Sinf': [
 	// 	{ name: 'Biologiya', link: 'https://forms.gle/ykAZaMaubUcd5og19' },
 	// ],
@@ -69,16 +69,16 @@ const classSubjects = {
 	// '7-G-Sinf': [
 	// 	{ name: 'Matematika', link: 'https://forms.gle/ay1mfEHhFGhYy15s7' },
 	// ],
-	// '7-A-Sinf': [
-	// 	{ name: '1-gurux Rustili', link: 'https://forms.gle/7CKXh6jPA2gjnGCc9' },
-	// 	{ name: 'Ingliz tili', link: 'https://forms.gle/rgfqaw3t9Xxou8ud8' },
-	// ],
-	'8-A-Sinf': [
-		{ name: 'Tarbiy', link: 'https://forms.gle/EMNw8MaZQHAKSHaK8' },
-		{ name: 'Fizika', link: 'https://forms.gle/T1XQJHcJjSAnwqbHA' },
-		{ name: 'Kimyo', link: 'https://forms.gle/ZFf8QoLQdCMWbYtv5' },
-		{ name: 'O`zbekiston tarixi', link: 'https://forms.gle/Pwf5zFgkZFv6VoAG6' },
+	'7-A-Sinf': [
+		{ name: '2-gurux Rustili', link: 'https://forms.gle/7CKXh6jPA2gjnGCc9' },
+		// 	{ name: 'Ingliz tili', link: 'https://forms.gle/rgfqaw3t9Xxou8ud8' },
 	],
+	// '8-A-Sinf': [
+	// 	{ name: 'Tarbiy', link: 'https://forms.gle/EMNw8MaZQHAKSHaK8' },
+	// 	{ name: 'Fizika', link: 'https://forms.gle/T1XQJHcJjSAnwqbHA' },
+	// 	{ name: 'Kimyo', link: 'https://forms.gle/ZFf8QoLQdCMWbYtv5' },
+	// 	{ name: 'O`zbekiston tarixi', link: 'https://forms.gle/Pwf5zFgkZFv6VoAG6' },
+	// ],
 	'8-E-Sinf': [
 		{ name: 'Geografiya', link: 'https://forms.gle/cwUrzDcfsA7KKQJU7' },
 	],
@@ -121,16 +121,16 @@ const classSubjects = {
 	// 	link: 'https://forms.gle/7fcqdUs4ceXiJu1LA',
 	// },
 	// ],
-	'9-G-Sinf': [
-		{
-			name: 'Matematika 1-variant',
-			link: 'https://forms.gle/Tcwkb18AZzvjXgzH7',
-		},
-		{
-			name: 'Matematika 2-variant',
-			link: 'https://forms.gle/qqDNPv2Wof4hhY5m8',
-		},
-	],
+	// '9-G-Sinf': [
+	// 	{
+	// 		name: 'Matematika 1-variant',
+	// 		link: 'https://forms.gle/Tcwkb18AZzvjXgzH7',
+	// 	},
+	// 	{
+	// 		name: 'Matematika 2-variant',
+	// 		link: 'https://forms.gle/qqDNPv2Wof4hhY5m8',
+	// 	},
+	// ],
 	// '10-A-Sinf': [
 	// 	{
 	// 		name: 'O`zbekiston tarixi 1-variant',
@@ -221,19 +221,19 @@ const classPasswords = {
 	// '5-F-Sinf': '5fsinf5',
 	// '5-E-Sinf': '5esinf5',
 	// '5-G-Sinf': '5gsinf5',
-	'5-D-Sinf': '5dsinf5',
-	'6-B-Sinf': '6bsinf6',
-	'8-B-Sinf': '8bsinf8',
+	// '5-D-Sinf': '5dsinf5',
+	// '6-B-Sinf': '6bsinf6',
+	// '8-B-Sinf': '8bsinf8',
 	// '7-D-Sinf': '7dsinf7',
 	'7-E-Sinf': '7esinf7',
 	// '7-G-Sinf': '7gsinf7',
-	// '7-A-Sinf': '7asinf7',
-	'8-A-Sinf': '8asinf8',
+	'7-A-Sinf': '7asinf7',
+	// '8-A-Sinf': '8asinf8',
 	'8-E-Sinf': '8esinf8',
 	'8-D-Sinf': '8dsinf8',
 	// '9-A-Sinf': '9asinf9',
 	// '9-B-Sinf': '9bsinf9',
-	'9-G-Sinf': '9gsinf9',
+	// '9-G-Sinf': '9gsinf9',
 	// '10-A-Sinf': '10asinf10',
 	// '10-B-Sinf': '10bsinf10',
 	'11-A-Sinf': '11asinf11',
