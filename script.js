@@ -57,15 +57,15 @@ const classSubjects = {
 	// ],
 	// '7-D-Sinf': [
 	// 	{ name: 'Biologiya', link: 'https://forms.gle/ykAZaMaubUcd5og19' },
+	// // ],
+	// '7-E-Sinf': [
+	// 	{ name: 'Fizika', link: 'https://forms.gle/iNGD9QYo31j5kR5V6' },
+	// 	{
+	// 		name: 'Onatili va adabiyot',
+	// 		link: 'https://forms.gle/gdcEYaX2euMbRZB37',
+	// 	},
+	// 	{ name: 'Ingliz tili', link: 'https://forms.gle/G5rXtug8d7XkbsLF8' },
 	// ],
-	'7-E-Sinf': [
-		{ name: 'Fizika', link: 'https://forms.gle/iNGD9QYo31j5kR5V6' },
-		{
-			name: 'Onatili va adabiyot',
-			link: 'https://forms.gle/gdcEYaX2euMbRZB37',
-		},
-		{ name: 'Ingliz tili', link: 'https://forms.gle/G5rXtug8d7XkbsLF8' },
-	],
 	// '7-G-Sinf': [
 	// 	{ name: 'Matematika', link: 'https://forms.gle/ay1mfEHhFGhYy15s7' },
 	// ],
@@ -225,7 +225,7 @@ const classPasswords = {
 	// '6-B-Sinf': '6bsinf6',
 	// '8-B-Sinf': '8bsinf8',
 	// '7-D-Sinf': '7dsinf7',
-	'7-E-Sinf': '7',
+	// '7-E-Sinf': '7',
 	// '7-G-Sinf': '7gsinf7',
 	// '7-A-Sinf': '7asinf7',
 	// '8-A-Sinf': '8asinf8',
