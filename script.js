@@ -70,7 +70,7 @@ const classSubjects = {
 	// 	{ name: 'Matematika', link: 'https://forms.gle/ay1mfEHhFGhYy15s7' },
 	// ],
 	'7-A-Sinf': [
-		{ name: '2-gurux Rustili', link: 'https://forms.gle/7CKXh6jPA2gjnGCc9' },
+		{ name: '2-gurux Rustili', link: 'https://forms.gle/NBG66jsz1Edggxcy9' },
 		// 	{ name: 'Ingliz tili', link: 'https://forms.gle/rgfqaw3t9Xxou8ud8' },
 	],
 	// '8-A-Sinf': [
@@ -79,16 +79,16 @@ const classSubjects = {
 	// 	{ name: 'Kimyo', link: 'https://forms.gle/ZFf8QoLQdCMWbYtv5' },
 	// 	{ name: 'O`zbekiston tarixi', link: 'https://forms.gle/Pwf5zFgkZFv6VoAG6' },
 	// ],
-	'8-E-Sinf': [
-		{ name: 'Geografiya', link: 'https://forms.gle/cwUrzDcfsA7KKQJU7' },
-	],
-	'8-D-Sinf': [
-		{ name: '1-Gurux Rustili', link: 'https://forms.gle/5ougpivHbjEicvNo9' },
-		{
-			name: 'Onatili va adabiyot',
-			link: 'https://forms.gle/caHS3hMWbLV7tX7QA',
-		},
-	],
+	// '8-E-Sinf': [
+	// 	{ name: 'Geografiya', link: 'https://forms.gle/cwUrzDcfsA7KKQJU7' },
+	// ],
+	// '8-D-Sinf': [
+	// 	{ name: '1-Gurux Rustili', link: 'https://forms.gle/5ougpivHbjEicvNo9' },
+	// 	{
+	// 		name: 'Onatili va adabiyot',
+	// 		link: 'https://forms.gle/caHS3hMWbLV7tX7QA',
+	// 	},
+	// ],
 	// '9-A-Sinf': [
 	// 	{
 	// 		name: 'Ingliz tili 1-variant',
@@ -183,16 +183,16 @@ const classSubjects = {
 	// 		link: 'https://forms.gle/6gfkimPshuDvuMCDA',
 	// 	},
 	// ],
-	'11-A-Sinf': [
-		{
-			name: 'Ingliz tili 1-variant',
-			link: 'https://forms.gle/eHabhBRqy1A3uizN9',
-		},
-		{
-			name: 'Ingliz tili 2-variant',
-			link: 'https://forms.gle/dgirGuwGCfcknsNx8',
-		},
-	],
+	// '11-A-Sinf': [
+	// 	{
+	// 		name: 'Ingliz tili 1-variant',
+	// 		link: 'https://forms.gle/eHabhBRqy1A3uizN9',
+	// 	},
+	// 	{
+	// 		name: 'Ingliz tili 2-variant',
+	// 		link: 'https://forms.gle/dgirGuwGCfcknsNx8',
+	// 	},
+	// ],
 	// '11-B-Sinf': [
 	// 	{
 	// 		name: 'Onatili va adabiyot 1-variant',
