@@ -69,10 +69,10 @@ const classSubjects = {
 	// '7-G-Sinf': [
 	// 	{ name: 'Matematika', link: 'https://forms.gle/ay1mfEHhFGhYy15s7' },
 	// ],
-	'7-A-Sinf': [
-		{ name: '1-gurux Rustili', link: 'https://forms.gle/NBG66jsz1Edggxcy9' },
-		// 	{ name: 'Ingliz tili', link: 'https://forms.gle/rgfqaw3t9Xxou8ud8' },
-	],
+	// '7-A-Sinf': [
+	// 	{ name: '1-gurux Rustili', link: 'https://forms.gle/NBG66jsz1Edggxcy9' },
+	// 	// 	{ name: 'Ingliz tili', link: 'https://forms.gle/rgfqaw3t9Xxou8ud8' },
+	// ],
 	// '8-A-Sinf': [
 	// 	{ name: 'Tarbiy', link: 'https://forms.gle/EMNw8MaZQHAKSHaK8' },
 	// 	{ name: 'Fizika', link: 'https://forms.gle/T1XQJHcJjSAnwqbHA' },
@@ -225,18 +225,18 @@ const classPasswords = {
 	// '6-B-Sinf': '6bsinf6',
 	// '8-B-Sinf': '8bsinf8',
 	// '7-D-Sinf': '7dsinf7',
-	'7-E-Sinf': '7esinf7',
+	'7-E-Sinf': '7',
 	// '7-G-Sinf': '7gsinf7',
-	'7-A-Sinf': '7asinf7',
+	// '7-A-Sinf': '7asinf7',
 	// '8-A-Sinf': '8asinf8',
-	'8-E-Sinf': '8esinf8',
-	'8-D-Sinf': '8dsinf8',
+	// '8-E-Sinf': '8esinf8',
+	// '8-D-Sinf': '8dsinf8',
 	// '9-A-Sinf': '9asinf9',
 	// '9-B-Sinf': '9bsinf9',
 	// '9-G-Sinf': '9gsinf9',
 	// '10-A-Sinf': '10asinf10',
 	// '10-B-Sinf': '10bsinf10',
-	'11-A-Sinf': '11asinf11',
+	// '11-A-Sinf': '11asinf11',
 	// '11-B-Sinf': '11bsinf11',
 }
 
