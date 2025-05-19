@@ -70,7 +70,7 @@ const classSubjects = {
 	// 	{ name: 'Matematika', link: 'https://forms.gle/ay1mfEHhFGhYy15s7' },
 	// ],
 	'7-A-Sinf': [
-		{ name: '2-gurux Rustili', link: 'https://forms.gle/NBG66jsz1Edggxcy9' },
+		{ name: '1-gurux Rustili', link: 'https://forms.gle/NBG66jsz1Edggxcy9' },
 		// 	{ name: 'Ingliz tili', link: 'https://forms.gle/rgfqaw3t9Xxou8ud8' },
 	],
 	// '8-A-Sinf': [
